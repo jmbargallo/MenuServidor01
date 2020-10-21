@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Menu proyectos jmbargallo</title>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,500,600,700" rel="stylesheet" type="text/css">
+    <style>
+        html, body {
+            margin:0;
+            padding:0;
+        }
+        
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            font-size: 1.8rem;
+            background-color: #f3f3f3;
+        }
+
+        header {
+            text-align: center;
+        }
+        
+        main > header {
+            background-color: #02223a;
+        }
+
+        h1 {
+            color:#003366;
+            font-size: 30px;
+            font-size:3rem;
+            -webkit-column-span:all;
+            -moz-column-span:all;
+            column-span:all;
+        }
+
+        a {
+            text-decoration: none;
+            color:#036;
+        }
+
+        #galeria {
+            margin: 1rem auto;
+            width:100%;
+            max-width:960px;
+            padding:0 20px 20px;
+            box-sizing: border-box;
+            column-count: 3;
+
+            /* Espacio entre columnas */
+            -moz-column-gap: 20px;
+            -webkit-column-gap: 20px;
+            column-gap: 20px;
+            
+            /* Filete entre columnas */
+            /*-moz-column-rule: 1px solid #bbb;
+            -webkit-column-rule: 1px solid #bbb;
+            column-rule: 1px solid #bbb;*/
+
+
+        }
+        
+        #galeria header {
+            -webkit-column-span:all;
+            column-span:all;
+        }
+
+        article {
+            background:#fff;
+            border-radius:5px;
+            border:1px solid #ccc;
+            margin:0 0 20px 0;
+            text-align: center;
+            max-width: 100%;
+            filter: opacity(70%);
+
+            /*Evitamos que se corte al cambiar de columna*/
+            break-inside: avoid;
+            page-break-inside: avoid;         
+       
+        }
+        
+        article img {
+            width:100%;
+        }
+
+        article:hover {
+            transition: .5s ease;
+            filter: opacity(100%);
+        }
+
+        figure {
+            padding:1rem;
+            box-sizing: border-box;
+        }
+
+ 
+        /* Móviles en horizontal o tablets en vertical */
+        @media (max-width: 767px) { 
+            #galeria {
+                columns:2;
+            }
+
+        }
+        
+        /* Móviles en vertical */
+
+        @media (max-width: 480px) {
+            #galeria {
+                columns: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <div id="logowrap">
+                <img src="imagenes/logo.png" alt="Logo " />
+            </div>
+           
+        </header>
+        <section id="galeria">
+        <header>
+            <h1>Proyectos Frontend</h1>
+        </header>
+        
+        <article>
+            <a href="http://fidmag.jmbargallo.online/CRUD/">
+                <figure>
+                    <img src="imagenes/crud.jpg" />
+                    <figcaption>CRUD avanzado con PHP y Bootstrap</figcaption>
+                </figure>
+            </a>
+        </article>
+                    
+        <article>
+            <a href="http://fidmag.jmbargallo.online/Piedrapapeltijera/index.html">
+                <figure>
+                    <img src="imagenes/piedra.jpg" />
+                    <figcaption>Piedra, Papel, Tijera, Lagarto, Spock</figcaption>
+                </figure>
+            </a>
+        </article>
+        
+        <article>
+            <a href="http://fidmag.jmbargallo.online/wiki/index.php/P%C3%A1gina_principal">
+                <figure>
+                    <img src="imagenes/wiki2.jpg" />
+                    <figcaption>Wiki Jose Maria Bargallo</figcaption>
+                </figure>
+            </a>
+        </article>
+        
+        <article>
+            <a href="http://servidor01.jmbargallo.online/angular/" >
+                <figure>
+                    <img src="imagenes/tresenraya.png" />
+                    <figcaption>Tres en raya Angular</figcaption>
+                </figure>
+            </a>
+        </article>
+        
+        <article>
+                <a href="http://fidmag.jmbargallo.online/RellotgeHEX/index.html">
+                    <figure>
+                        <img src="imagenes/reloj.jpg" />
+                        <figcaption>Un reloj digital</figcaption>
+                    </figure>
+                </a>
+        </article>
+          
+        <article>
+              <a href="http://fidmag.jmbargallo.online/Oihanetest/oihane.php">  
+                    <figure>
+                        <img src="imagenes/quiztime.jpg" />
+                        <figcaption>Cuanto sabes de Oihane??</figcaption>
+                    </figure>
+                </a>
+        </article>
+        
+        <article>
+                <a href="http://fidmag.jmbargallo.online/Laura/">
+                        <figure>
+                            <img src="imagenes/laura.jpg" />
+                            <figcaption>La pagina de Laura</figcaption>
+                        </figure>
+                    </a>
+        </article>
+        
+        <article>
+                <a href="http://fidmag.jmbargallo.online/MarinaCumple/index.html">
+                    <figure>
+                        <img src="imagenes/marina.jpg" />
+                        <figcaption>Cumple Marina 2020</figcaption>
+                    </figure>
+                </a>
+            </article>
+        
+        <article>
+                <a href="http://fidmag.jmbargallo.online/MarinaVideo/MarinaCumple.mp4" >
+                    <figure>
+                        <img src="imagenes/marichupe.jpg" />
+                        <figcaption>Video Marina Crece</figcaption>
+                    </figure>
+                </a>
+        </article>
+            
+        <article>
+                <a href="http://fidmag.jmbargallo.online/Hairspray/Hairspray.mp4" >
+                    <figure>
+                        <img src="imagenes/Hairspray.jpg" />
+                        <figcaption>Hairspray</figcaption>
+                    </figure>
+                </a>
+        </article>
+          
+        <article>
+            <a href="http://fidmag.jmbargallo.online/Udane/udane.php">
+                <figure>
+                    <img src="imagenes/quiz.jpg" />
+                    <figcaption>Cuanto sabes de Udane??</figcaption>
+                </figure>
+            </a>
+        </article>
+
+        <article>
+            <a href="http://fidmag.jmbargallo.online/Oihane/index.html">
+                <figure>
+                    <img src="imagenes/oihane.jpg" />
+                    <figcaption>La pagina de Oihane</figcaption>
+                </figure>
+            </a>
+        </article>
+
+        <article>
+            <a href="http://fidmag.jmbargallo.online/Marina/index.html">
+                <figure>
+                    <img src="imagenes/quiztime2.jpg" />
+                    <figcaption>Cuanto sabes de Marina?</figcaption>
+                </figure>
+            </a>
+        </article>
+
+
+        </section>
+    </main>
+</body>
+</html>
